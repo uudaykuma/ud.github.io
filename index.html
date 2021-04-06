@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- header and nav bar starts from here -->
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div id="admin">
+            <button onclick="gotocart()">Go to cart</button>
+        </div>
+
+    </header>
+    <nav id="nav">
+        <div id="icat1"><button onclick="home()">HOME</button></div>
+        <div id="icat2"><button onclick="">MEN'S CLOTHING</button></div>
+        <div id="icat3"><button>WOMEN'S CLOTHING</button></div>
+        <div id="icat4"><button>ELECTRONICS</button></div>
+        <div id="icat5"><button>JEWELLERY</button></div>
+    </nav>
+    <!-- header and nav bar ends here -->
+
+    <!-- image slide show start from here -->
+    <div id="slide">
+        <img src="https://images.unsplash.com/photo-1543322748-33df6d3db806?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVucyUyMGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" id="images">
+    </div>
+    <!-- image slide show end  here -->
+
+    <!-- category box start from here -->
+    <div id="category">
+        <div id="forMen"><button onclick="category(men)" id="men" value="men clothing">for men's</button></div>
+        <div id="forWomen"><button onclick="category(women)" id="women" value="women clothing">for women's</button></div>
+        <div id="electronic"><button onclick="category(electronics)" id="electronics" value="electronics">for electronics</button></div>
+        <div id="jewellery"><button onclick="category(jewelery)" id="jewelery" value="jewelery">for jewellery</button></div>
+    </div>
+    <!-- category box ends  here -->
+
+    <!-- <div id="sort">
+        <select name="sorting" id="sorting" onchange="sortproduct()">
+            <option value="showall">Sort by</option>
+            <option value="low">Low to high</option>
+            <option value="high">high to low</option>
+        </select>
+    </div> -->
+
+
+
+    <!-- showing catergory of that particular product -->
+    <div id="display"></div>
+    <!-- showing catergory of that particular product ends -->
+
+    <!-- footer starts here -->
+    <footer>
+
+    </footer>
+
+    <!-- script start -->
+    <script src="index.js "></script>
+    <!--  -->
+</body>
+
+</html>

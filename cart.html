@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- header and nav bar starts from here -->
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div id="admin">
+            <button id="promoCode" onclick="goToPayment()">Checkout</button>
+        </div>
+
+
+    </header>
+    <nav id="nav">
+        <div id="icat1"><button onclick="home()">HOME</button></div>
+        <div id="icat2"><button>MEN'S CLOTHING</button></div>
+        <div id="icat3"><button>WOMEN'S CLOTHING</button></div>
+        <div id="icat4"><button>ELECTRONICS</button></div>
+        <div id="icat5"><button>JEWELLERY</button></div>
+    </nav>
+    <!-- header and nav bar ends here -->
+
+    <div id="display"></div>
+
+
+    <div id="totalcart">
+        <div id="cartvalue"></div>
+        <div id="newtotal"></div>
+        <input type="text" id="promo" placeholder="Enter promocode here...">
+        <p>**valid promocode should be of 7 character i.e (XXXXX10) for 10% discount**</p>
+        <button onclick="applyPromo()">Apply promocode</button>
+    </div>
+
+
+    <script src="./cart.js"></script>
+</body>
+
+</html>

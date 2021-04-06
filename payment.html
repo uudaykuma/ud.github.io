@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+
+<body>
+    <h1>payment page</h1>
+    <div id="pay_detail">
+        <div id="info">Fill the payment detail</div>
+
+        <input type="text" placeholder="Cardholder name" id="name"><br><br>
+        <input type="number" id="cardnumber" placeholder="Enter your 16 digit card number"><br><br>
+        <input type="text" id="exdate" placeholder="ex:- 12/25"><br><br>
+        <input type="number" id="cvv" placeholder="Enter your 3 digit CVV"><br><br>
+        <p>*Please fill all the necessary details*</p><br><br>
+
+        <button id="payment" onclick="makePayment()">Pay</button>
+
+    </div>
+    <div id="otp">
+        <input type="number" placeholder="please fill the otp" id="inputOtp"><br><br>
+        <button onclick="submitOtp()">Submit OTP</button>
+    </div>
+
+    <script src="./payment.js"></script>
+</body>
+
+</html>
